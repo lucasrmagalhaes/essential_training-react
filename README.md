@@ -1,2 +1,2 @@
-# essential_training-react
-React.js Essential Training
+[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [x] Manage Extensions - React Developer Tools - Details - Allow access to file URLs
