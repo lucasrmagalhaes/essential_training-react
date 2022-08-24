@@ -15,27 +15,36 @@
     <div id="root"></div>
       
     <script type="text/babel">
-      function Header() {
+      function Header(props) {
         return (
           <header>
-            <h1>Lucas</h1>
+            <h1>{props.name}</h1>
           </header>
         );
       }
 
-      function Main() {
+      function Main(props) {
         return (
           <section>
-            <p>Main</p>
+            <p>{props.main}</p>
           </section>
         );
+      }
+
+      function Footer(props) {
+        return (
+          <footer>
+            <p>Copyright {props.year}</p>
+          </footer>
+        )
       }
 
       function App() {
         return (
           <div>
-            <Header />
-            <Main />
+            <Header name="Lucas" />
+            <Main main="Main" />
+            <Footer year={new Date().getFullYear()} />
           </div>
         );
       }
