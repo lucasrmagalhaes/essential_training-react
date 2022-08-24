@@ -15,11 +15,18 @@
     <div id="root"></div>
       
     <script type="text/babel">
+      let robot = "🤖";
+      let cowboy = "🤠";
+      let sun = "☀️";
+      let name = "React";
+
       ReactDOM.render(
         <ul>
-          <li>test 1</li>
-          <li>test 2</li>
-          <li>test 3</li>
+          <li>{robot}</li>
+          <li>{cowboy}</li>
+          <li>{sun}</li>
+          <li>{name.toUpperCase()}</li>
+          <li>{name.length}</li>
         </ul>,
         document.getElementById("root")
       );

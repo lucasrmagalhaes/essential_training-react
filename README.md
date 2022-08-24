@@ -4,3 +4,5 @@
 [React Developer Tools - Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
 
 ---
+
+Windows + > = Emoticons
