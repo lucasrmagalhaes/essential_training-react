@@ -15,19 +15,33 @@
     <div id="root"></div>
       
     <script type="text/babel">
-      let robot = "🤖";
-      let cowboy = "🤠";
-      let sun = "☀️";
-      let name = "React";
+      function Header() {
+        return (
+          <header>
+            <h1>Lucas</h1>
+          </header>
+        );
+      }
+
+      function Main() {
+        return (
+          <section>
+            <p>Main</p>
+          </section>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+          </div>
+        );
+      }
 
       ReactDOM.render(
-        <ul>
-          <li>{robot}</li>
-          <li>{cowboy}</li>
-          <li>{sun}</li>
-          <li>{name.toUpperCase()}</li>
-          <li>{name.length}</li>
-        </ul>,
+        <App />,
         document.getElementById("root")
       );
     </script>
