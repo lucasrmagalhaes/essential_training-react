@@ -27,9 +27,13 @@
         return (
           <section>
             <ul>
-              {props.dishes.map((dish) => (
-                <li>{dish}</li>
-              ))}
+              {props.dishes.map(
+                (dish) => (
+                  <li key={dish.id}>
+                    {dish.title}
+                  </li>
+                )
+              )}
             </ul>
           </section>
         );
@@ -46,14 +50,22 @@
       const dishes = [
         "Black Bean Soup",
         "Macaroni and Cheese",
-        "Salmon and Potatoes"
-      ]
+        "Salmon and Potatoes",
+        "Pizza"
+      ];
+
+      const dishObjects = dishes.map(
+        (dish, i) => ({
+          id: i,
+          title: dish
+        })
+      );
 
       function App() {
         return (
           <div>
             <Header name="Lucas" />
-            <Main dishes={dishes} />
+            <Main dishes={dishObjects} />
             <Footer year={new Date().getFullYear()} />
           </div>
         );
