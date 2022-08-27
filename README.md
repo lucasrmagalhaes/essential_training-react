@@ -1,7 +1,7 @@
-* [React Developer Tools - Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+[React Developer Tools - Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [x] Manage Extensions - React Developer Tools - Details - Allow access to file URLs
 
-* [React Developer Tools - Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
+[React Developer Tools - Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/react-devtools/)
 
 ---
 
@@ -53,7 +53,7 @@ npm start
 
 ---
 
-* [React Router](https://reactrouter.com)
+[React Router](https://reactrouter.com)
 
 ```
 npm install react-router-dom@6
@@ -61,4 +61,4 @@ npm install react-router-dom@6
 
 ---
 
-* [Using Matchers](https://jestjs.io/docs/using-matchers)
+[Using Matchers](https://jestjs.io/docs/using-matchers)
