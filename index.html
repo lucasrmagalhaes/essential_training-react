@@ -70,11 +70,13 @@
 
       function App() {
         return (
-          <div>
+          <React.Fragment>
             <Header name="Lucas" />
+            
             <Main dishes={dishObjects} />
+
             <Footer year={new Date().getFullYear()} />
-          </div>
+          </React.Fragment>
         );
       }
 
