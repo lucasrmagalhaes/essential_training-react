@@ -15,27 +15,45 @@ function GithubUser({ name, location, avatar }) {
 
 function App() {
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch(
       `https://api.github.com/users/lucasrmagalhaes`
     )
       .then((response) => response.json())
-      .then(setData);
+      .then(setData)
+      .then(() => setLoading(false))
+      .catch(setError);
   }, []);
 
-  if (data) {
+  if (loading) {
     return (
-      <GithubUser 
-        name={data.name} 
-        location={data.location}
-        avatar={data.avatar_url}
-      />
-    )
+      <h1>Loading...</h1>
+    );
+  }
+
+  if (error) {
+    return (
+      <pre>
+        { JSON.stringify(error) }
+      </pre>
+    );
+  }
+
+  if (!data) {
+    return null;
   }
 
   return (
-    <h1>Data</h1>
+    <GithubUser 
+      name={data.name} 
+      location={data.location}
+      avatar={data.avatar_url}
+    />
   );
 }
 
