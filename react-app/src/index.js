@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { App, Home, About, Contact } from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <App /> } />
+      <Route path="/home" element={ <Home /> } />
+      <Route path="/about" element={ <About /> } />
+      <Route path="/contact" element={ <Contact /> } />
+    </Routes>
+  </BrowserRouter>,
 
   document.getElementById('root')
 );
-
-reportWebVitals();
