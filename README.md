@@ -10,3 +10,32 @@ Windows + > = Emoticons
 ---
 
 [Pexels](https://pexels.com)
+
+---
+
+**Node Version**
+```
+node -v
+```
+
+**NPM Version**
+```
+npm -v
+```
+
+**New React Project**
+```
+npx create-react-app react-app
+```
+
+**Access the folder**
+```
+cd react-app
+```
+
+**Running the new project**
+```
+npm start
+```
+
+---
