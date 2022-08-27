@@ -62,3 +62,12 @@ npm install react-router-dom@6
 ---
 
 [Using Matchers](https://jestjs.io/docs/using-matchers)
+
+---
+
+[Netlify](https://app.netlify.com/drop)
+
+**Build**
+```
+npm run build
+```
