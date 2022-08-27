@@ -1,3 +1,7 @@
+### React.js Essential Training
+
+---
+
 [React Developer Tools - Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [x] Manage Extensions - React Developer Tools - Details - Allow access to file URLs
 
@@ -65,7 +69,7 @@ npm install react-router-dom@6
 
 ---
 
-[Netlify](https://app.netlify.com/drop)
+[Netlify Drop](https://app.netlify.com/drop)
 
 **Build**
 ```
