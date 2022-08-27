@@ -52,3 +52,11 @@ npm start
 * [useHooks](https://usehooks.com)
 
 ---
+
+* [React Router](https://reactrouter.com)
+
+```
+npm install react-router-dom@6
+```
+
+---
