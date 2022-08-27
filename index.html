@@ -26,7 +26,11 @@
       function Main(props) {
         return (
           <section>
-            <p>{props.main}</p>
+            <ul>
+              {props.dishes.map((dish) => (
+                <li>{dish}</li>
+              ))}
+            </ul>
           </section>
         );
       }
@@ -36,14 +40,20 @@
           <footer>
             <p>Copyright {props.year}</p>
           </footer>
-        )
+        );
       }
+
+      const dishes = [
+        "Black Bean Soup",
+        "Macaroni and Cheese",
+        "Salmon and Potatoes"
+      ]
 
       function App() {
         return (
           <div>
             <Header name="Lucas" />
-            <Main main="Main" />
+            <Main dishes={dishes} />
             <Footer year={new Date().getFullYear()} />
           </div>
         );
