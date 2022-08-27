@@ -5,11 +5,15 @@
 
 ---
 
-Windows + > = Emoticons
+**Emoticons**
+```
+Windows + >
+```
 
 ---
 
-[Pexels](https://pexels.com)
+**Free stock photos**
+* [Pexels](https://pexels.com)
 
 ---
 
@@ -45,6 +49,6 @@ npm start
 * [React Hook Form](https://react-hook-form.com)
 
 **Hooks**
-*[useHooks](https://usehooks.com)
+* [useHooks](https://usehooks.com)
 
 ---
